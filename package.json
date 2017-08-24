@@ -1,0 +1,25 @@
+{
+  "name": "flashcard_generator",
+  "version": "1.0.0",
+  "description": "HW09 - Flashcard Generator",
+  "main": "Basic_Card.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DaveJag/flashcard_generator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DaveJag/flashcard_generator/issues"
+  },
+  "homepage": "https://github.com/DaveJag/flashcard_generator#readme",
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "request": "^2.81.0",
+    "require": "^2.4.20"
+  }
+}
