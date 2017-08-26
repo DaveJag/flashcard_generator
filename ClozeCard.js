@@ -1,14 +1,14 @@
 //ClozeCard.js file
 
 //Create the Cloze Constructor with the full text string and the Cloze phrase to be removed.
+console.log("ClozeCard.js is loaded.");
+function ClozeCard(text, cloze){
 
-exports.ClozeCard = function(text, cloze){
-
-    console.log("ClozeCard.js is loaded.");
+	//Convert both strings to lower case so they can be compared. 
 	var lcText = text.toLowerCase();
 	var lcCloze = cloze.toLowerCase();
 
-	// Test if the cloze statement appears within the complete text
+	// Compare strings. Test if the cloze statement appears within the complete text
 	if (!lcText.includes(lcCloze)) {
 		console.log("ERROR:");
 		console.log ("The cloze-deletion string " + "\"" + cloze +"\"" + "is not contained within the full text string.");
@@ -21,4 +21,7 @@ exports.ClozeCard = function(text, cloze){
 	
 }; //end function
 
-//module.exports = ClozeCard;
+var firstPresidentCloze = new ClozeCard("George Washington was the first president of the United States.", "George Washington");
+
+
+module.exports = ClozeCard;

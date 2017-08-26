@@ -2,7 +2,15 @@
   "name": "flashcard_generator",
   "version": "1.0.0",
   "description": "HW09 - Flashcard Generator",
-  "main": "Basic_Card.js",
+  "main": "main.js",
+  "dependencies": {
+    "graceful-fs": "^4.1.11",
+    "inquirer": "^3.2.2",
+    "node-fs": "^0.1.7",
+    "request": "^2.81.0",
+    "require": "^2.4.20"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +24,5 @@
   "bugs": {
     "url": "https://github.com/DaveJag/flashcard_generator/issues"
   },
-  "homepage": "https://github.com/DaveJag/flashcard_generator#readme",
-  "dependencies": {
-    "graceful-fs": "^4.1.11",
-    "request": "^2.81.0",
-    "require": "^2.4.20"
-  }
+  "homepage": "https://github.com/DaveJag/flashcard_generator#readme"
 }
