@@ -1,7 +1,7 @@
 //Dave Jagodowski - HW09 - Cloze Constructors
 //Basic_Card.js
 
-console.log("Basic_Card.js is loaded.");
+//console.log("Basic_Card.js is loaded.");
 
 var fs = require("fs"); //need this to write card data out to log.txt file
 
