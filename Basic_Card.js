@@ -3,7 +3,7 @@
 
 //console.log("Basic_Card.js is loaded.");
 
-var fs = require("fs"); //need this to write card data out to log.txt file
+var fs = require("node-fs"); //need this to write card data out to log.txt file
 
 //Create the Basic Constructor with text appearing on the front and the back.
 function BasicCard(front, back) {
@@ -14,14 +14,16 @@ function BasicCard(front, back) {
 			front: this.front,
 			back: this.back,
 			type: "basic",
-		} //end cardData object
-        fs.appendFile("log.txt", JSON.stringify(cardData), "utf8", function(error) {
+		}; //end cardData object
+        fs.appendFile("logbasic.txt", JSON.stringify(cardData), "utf8", function(error) {
         	if (error) {
         		console.log(error);
         	}//end if
         })//end fs.appenfile function
 	}//end function create
 }//end function BasicCard
+
+
 
 module.exports = BasicCard;
 
