@@ -1,2 +1,18 @@
-Question: Who was the first president of the United States?
+Question: Who was the first president of the United States?; 
 Answer: George Washington
+Question: Who was the first president of the United States?; 
+Answer: George Washington
+Question: Who was the first president of the United States?; 
+Answer: George Washington;
+Question: Who was the first president of the United States?; 
+Answer: George Washington;
+Question: Who was the first president of the United States?; 
+Answer: George Washington;
+Question: Who was the first president of the United States?; 
+Answer: George Washington;
+Question: Who was the first president of the United States?; 
+Answer: George Washington;
+Question: Who was the first president of the United States?; 
+Answer: George Washington;
+Question: Who was the first president of the United States?; 
+Answer: George Washington;

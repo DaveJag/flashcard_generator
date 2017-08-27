@@ -21,11 +21,12 @@ if (flashCardType === "basic") {
   		var flashcard = new BasicCard("Who was the first president of the United States?", "George Washington");
   		console.log(flashcard.front);
   		console.log(flashcard.back);
-        var logBasicOutput = ("Question: " + flashcard.front + "\r\n" + "Answer: " + flashcard.back + "\r\n"); 
+        var logBasicOutput = ("Question: " + flashcard.front + "; " + "\r\n" + "Answer: " + flashcard.back + ";" + "\r\n"); 
   		fs.appendFile("logbasic.txt", logBasicOutput, "utf8", function(error) {
         	if (error) {
         		console.log(error);
         	}//end if
+        showCards();
         })//end fs.appenfile function
 
 	} else {
@@ -41,7 +42,7 @@ else if (flashCardType === "cloze") {
   	    var clozecard = new ClozeCard("George Washington was the first president of the United States.", "George Washington");
         console.log(clozecard.partial);
   	    console.log(clozecard.cloze); 
-  	    var logClozeOutput = ("Question: " + clozecard.partial + "\r\n" + "Answer: " + clozecard.cloze + "\r\n"); 
+  	    var logClozeOutput = ("Question: " + clozecard.partial + "; \r\n" + "Answer: " + clozecard.cloze + "\r\n"); 
   		fs.appendFile("logcloze.txt", logClozeOutput, "utf8", function(error) {
         	if (error) {
         		console.log(error);
@@ -75,6 +76,35 @@ function newBasic(){
 	console.log("question is " + question);
 }
 
+
+
+function isEven(value) {
+	if (value%2 == 0)
+		return true;
+	else
+		return false;
+}
+
+var showCards = function() {
+
+    fs.readFile("./logbasic.txt", "utf8", function(error, data) {
+        //if there is an error, log it
+        if (error) {
+            console.log(error);
+        }
+        var questions = data.split("\r\n");
+        var notBlank = function(value) {
+            return value;
+        };
+        questions = questions.filter(notBlank);
+        var count = 0;
+        while (questions[count] != undefined){
+            console.log("output Q " + questions[count]);
+            console.log("output A " + questions[count+1]);
+            count = count + 2;
+        }
+    });
+};
 /*
 var firstPresident = new BasicCard("Who was the first president of the United States?", "George Washington");
 console.log(firstPresident.front);

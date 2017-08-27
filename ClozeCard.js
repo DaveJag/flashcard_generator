@@ -1,12 +1,6 @@
 //ClozeCard.js file
 
-var fs = require("node-fs"); //need this to write card data out to log.txt file
-
-
-//Create the Cloze Constructor with the full text string and the Cloze phrase to be removed.
-//console.log("ClozeCard.js is loaded.");
-
-
+//This file contains  the Cloze Constructor which accepts  the full text string and the Cloze-deletion phrase.
 
 function ClozeCard(text, cloze){
 
